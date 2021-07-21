@@ -21,7 +21,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <button type="button" onClick={() => {
+        <button type="button" onClick={(e) => {
           throw new Error("Sentry Frontend Error");
         }}>
             Throw error
