@@ -21,7 +21,7 @@ export default function Home() {
     } catch (e) {
       console.log('e: %o', e)
       setResult("error")
-      throw(e)
+      throw (e)
     }
   };
 
@@ -56,11 +56,11 @@ export default function Home() {
       <div className="calculator-body">
         <h1>Sentry error logging demo</h1>
         <h3>Please break calculator to log error</h3>
-        
+
         <ResultComponent result={result} />
         <KeyPadComponent onClick={onClick} />
 
-        <h5>Hint: 5/0 -> infinity -> delete letter -> evaluate</h5>
+        <h5>Hint: 5/0 &gt; infinity &gt; delete letter &gt; evaluate</h5>
       </div>
     </div>
   )
